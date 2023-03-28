@@ -1,5 +1,4 @@
 import logging
-logging.info("Entering init file")
 import os
 from typing import Any
 
