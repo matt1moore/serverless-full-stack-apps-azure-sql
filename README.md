@@ -1,3 +1,10 @@
+# Pre-work
+1. Create a Azure Student Account
+    1. Make sure the email used non-gonzaga
+    1. You will need credit card info
+        1. (There will be no charge)
+        1. We will set up a budget to prevent this!!
+
 # Build serverless, full stack applications in Azure
 
 Learn how to create, build, and deploy modern full stack applications in Azure leveraging the language of your choice (Python, Node.js, or .NET) and with a simple JQuery frontend. Topics covered include modern database capabilities, CI/CD and DevOps, backend API development, REST, and more. Using a real-world scenario of trying to catch the bus, you will learn how to build a solution that leverages Azure SQL Database, Azure Functions, Azure Static Web Apps, Logic Apps, Visual Studio Code and GitHub Actions.
