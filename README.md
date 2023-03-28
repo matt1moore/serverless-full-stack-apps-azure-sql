@@ -1,5 +1,7 @@
 # Pre-work
 1. Create a Azure Student Account
+    1. Link to Sandbox if you would prefer:
+        1. https://learn.microsoft.com/en-us/training/modules/automate-deployments-github-actions-azure/3-exercise-deploy-resources?pivots=python
     1. Make sure the email used non-gonzaga
     1. You will need credit card info
         1. (There will be no charge)
