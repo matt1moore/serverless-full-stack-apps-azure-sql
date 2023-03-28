@@ -8,7 +8,7 @@ import json
 import requests
 
 from datetime import datetime
-from .bus_data_process import (
+from bus_data_process import (
     get_bus_data_from_feed,
     get_geo_fences,
     get_monitored_format,
@@ -18,6 +18,7 @@ from .bus_data_process import (
 )
 
 logging.info("Entering the environment variable region")
+
 AZURE_CONN_STRING: str = os.environ["AzureSQLConnectionString"]
 GTFS_REAL_TIME_FEED: str = os.environ["RealTimeFeedUrl"]
 LOGIC_APP_URL: str = os.environ.get("LogicAppUrl", "")
