@@ -1,4 +1,5 @@
 import logging
+logging.info("Entering init file")
 import os
 from typing import Any
 
@@ -17,13 +18,15 @@ from .bus_data_process import (
     trigger_logic_app,
 )
 
+logging.info("Entering Environment Variables")
+
 AZURE_CONN_STRING: str = os.environ["AzureSQLConnectionString"]
 GTFS_REAL_TIME_FEED: str = os.environ["RealTimeFeedUrl"]
 LOGIC_APP_URL: str = os.environ.get("LogicAppUrl", "")
 
-
 def main(GetBusData: func.TimerRequest) -> None:
     """Retrieve the routes we want to monitor from the SQL Database"""
+    logging.info("Entering the main function")
     conn: str = pyodbc.connect(AZURE_CONN_STRING)
     monitored_routes: list[int] = get_monitored_routes(conn)
     logging.info(f"{len(monitored_routes)} routes to check against")
