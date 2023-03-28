@@ -4,6 +4,7 @@
     1. You will need credit card info
         1. (There will be no charge)
         1. We will set up a budget to prevent this!!
+1. Fork this repo!
 
 # Build serverless, full stack applications in Azure
 
