@@ -5,7 +5,7 @@
         "AzureWebJobsSecretStorageType": "files",
         "FUNCTIONS_WORKER_RUNTIME": "python",
         "RealTimeFeedUrl": "https://s3.amazonaws.com/kcm-alerts-realtime-prod/vehiclepositions_enhanced.json",
-        "LogicAppUrl": "",
-        "AzureSQLConnectionString": "Driver={ODBC Driver 17 for SQL Server};Server=tcp:[serverName].database.windows.net,1433;Database=bus-db;Uid=cloudadmin;Pwd=[password];Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;"
+        "LogicAppUrl": "https://prod-85.eastus.logic.azure.com:443/workflows/e19848d570e040368d1b398891c05ee6/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=oZeNhs8jR_ogAw56rvzRf-Y5KwKdjpIVBsJAS2zeBrA",
+        "AzureSQLConnectionString": "Driver={ODBC Driver 18 for SQL Server};Server=tcp:demo-server929254.database.windows.net,1433;Database=demo-sql-db;Uid=cloudadmin;Pwd=Demopass1234!;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;"
     }
 }
