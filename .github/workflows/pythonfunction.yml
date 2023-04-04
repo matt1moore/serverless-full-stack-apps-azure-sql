@@ -32,8 +32,10 @@ jobs:
         python-version: ${{ env.PYTHON_VERSION }}
     - name: Install dependencies
       run: |
-        python -m sudo apt install --target=".python_packages/lib/site-packages" -r requirements.txt
+        python -m pip install --target=".python_packages/lib/site-packages" -r requirements.txt
         echo "" > requirements.txt # blank out requirements.txt so it doesn't get installed again
+        sudo apt install unixodbc # Slightly different version for linux
+
       working-directory: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
 
     - name: 'Run Azure Functions Action'
