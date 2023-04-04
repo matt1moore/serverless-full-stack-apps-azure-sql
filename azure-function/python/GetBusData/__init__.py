@@ -17,7 +17,6 @@ from bus_data_process import (
     trigger_logic_app,
 )
 
-logging.info("Entering the environment variable region")
 
 AZURE_CONN_STRING: str = os.environ["AzureSQLConnectionString"]
 GTFS_REAL_TIME_FEED: str = os.environ["RealTimeFeedUrl"]
