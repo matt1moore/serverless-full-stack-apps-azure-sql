@@ -5,6 +5,7 @@
       "name": "GetBusData",
       "type": "timerTrigger",
       "direction": "in",
+      "authLevel": "anonymous",
       "schedule": "0 * * * * *"
     }
   ]
