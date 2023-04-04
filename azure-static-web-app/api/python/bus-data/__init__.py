@@ -7,8 +7,7 @@ import pyodbc
 from datetime import datetime as dt
 import azure.functions as func
 
-# AZURE_CONN_STRING = str(os.environ["AzureSQLConnectionString"])
-AZURE_CONN_STRING = "Driver={ODBC Driver 17 for SQL Server};Server=tcp:demo-server929254.database.windows.net;Database=demo-sql-db;Encrypt=yes;UID=cloudadmin;PWD=Demopass1234!;"
+AZURE_CONN_STRING = str(os.environ["AzureSQLConnectionString"])
 
 def main(req: func.HttpRequest) -> func.HttpResponse:
     result = {}

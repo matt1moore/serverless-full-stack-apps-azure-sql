@@ -47,6 +47,3 @@ def main(GetBusData =  func.TimerRequest):
     for fence in geo_fences:
         logging.info(f"Vehicle {fence['VehicleId']} , route {fence['RouteId']}, status: {fence['GeoFenceStatus']} at {fence['TimestampUTC']} UTC")
         trigger_logic_app(fence, LOGIC_APP_URL)
-
-if __name__ == '__main__':
-    main(GetBusData=True)
