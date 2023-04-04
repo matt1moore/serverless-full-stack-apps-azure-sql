@@ -5,4 +5,3 @@
 azure-functions
 requests
 pyodbc
-unixodbc
